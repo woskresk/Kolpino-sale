@@ -1,0 +1,13 @@
+# Conection
+.env
+
+# Dependences (Composer)
+/vendor
+/node_modules
+
+# Ссылка на локальное хранилище
+/public/storage
+
+# Vagrant Laravel
+Homestead.json
+Homestead.yaml

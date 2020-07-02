@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<title>E-Commerce</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="e-commerce site well design with responsive view." />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="image/catalog/cart.png" rel="icon" />
+<link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+<link href="javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href="css/stylesheet.css" rel="stylesheet">
+<link href="css/responsive.css" rel="stylesheet">
+<link href="javascript/owl-carousel/owl.carousel.css" type="text/css" rel="stylesheet" media="screen" />
+<link href="javascript/owl-carousel/owl.transitions.css" type="text/css" rel="stylesheet" media="screen" />
+<script src="javascript/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="javascript/template_js/jstree.min.js"></script>
+<script type="text/javascript" src="javascript/template_js/template.js"></script>
+<script src="javascript/common.js" type="text/javascript"></script>
+<script src="javascript/global.js" type="text/javascript"></script>
+<script src="javascript/owl-carousel/owl.carousel.min.js" type="text/javascript"></script>
+</head>
+<body class="account-voucher col-2 left-col">
+<div class="preloader loader" style="display: block;"> <img src="image/loader.gif"  alt="#"/></div>
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="top-left pull-left">
+                        <div class="language">
+                            <form action="#" method="post" enctype="multipart/form-data" id="language">
+                                <div class="btn-group">
+                                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"> <img src="image/flags/gb.png" alt="English" title="English"> <i class="fa fa-caret-down"></i></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#"><img src="image/flags/lb.png" alt="Arabic" title="Arabic"> Arabic</a></li>
+                                        <li><a href="#"><img src="image/flags/gb.png" alt="English" title="English"> English</a></li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="currency">
+                            <form action="#" method="post" enctype="multipart/form-data" id="currency">
+                                <div class="btn-group">
+                                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown"> <strong>$</strong> <i class="fa fa-caret-down"></i> </button>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ Euro</button>
+                                        </li>
+                                        <li>
+                                            <button class="currency-select btn btn-link btn-block" type="button" name="GBP">£ Pound Sterling</button>
+                                        </li>
+                                        <li>
+                                            <button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US Dollar</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="top-right pull-right">
+                        <div id="top-links" class="nav pull-right">
+                            <ul class="list-inline">
+                                <li class="dropdown"><a href="#" title="My Account" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span>My Account</span> <span class="caret"></span></a>
+                                    <ul class="dropdown-menu dropdown-menu-right">
+                                        <li><a href="register.html">Register</a></li>
+                                        <li><a href="login.html">Login</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="wishlist-total" title="Wish List (0)"><i class="fa fa-heart"></i> <span>Wish List</span><span> (0)</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header-inner">
+            <div class="col-sm-4 col-xs-6 header-left">
+            <div class="shipping">
+                        <div class="shipping-img"></div>
+                        <div class="shipping-text">Free Shipping <span class="shipping-detail">Free on all products</span></div>
+                    </div>
+                
+            </div>
+            <div class="col-sm-4 col-xs-6 header-middle">
+                <div class="header-middle-top">
+                    
+                    <div id="logo"> <a href="index.html"><img src="image/logo.png" title="E-Commerce" alt="E-Commerce" class="img-responsive" /></a> </div>
+                </div>
+            </div>
+            <div class="col-sm-4 col-xs-6 header-right">
+                <div id="cart" class="btn-group btn-block">
+                    <button type="button" class="btn btn-inverse btn-block btn-lg dropdown-toggle cart-dropdown-button"><span id="cart-total">1 item(s) - $254.00</span><i class="fa fa-caret-down"></i></button>
+                    <ul class="dropdown-menu pull-right cart-dropdown-menu">
+                        <li>
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center"><a href="#"><img class="img-thumbnail" title="iPhone" alt="iPhone" src="image/product/7product50x59.jpg"></a></td>
+                                        <td class="text-left"><a href="#">iPhone</a></td>
+                                        <td class="text-right">x 1</td>
+                                        <td class="text-right">$254.00</td>
+                                        <td class="text-center"><button class="btn btn-danger btn-xs" title="Remove" type="button"><i class="fa fa-times"></i></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li>
+                            <div>
+                                <table class="table table-bordered">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-right"><strong>Sub-Total</strong></td>
+                                            <td class="text-right">$210.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><strong>Eco Tax (-2.00)</strong></td>
+                                            <td class="text-right">$2.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><strong>VAT (20%)</strong></td>
+                                            <td class="text-right">$42.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-right"><strong>Total</strong></td>
+                                            <td class="text-right">$254.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p class="text-right"> <span class="btn-viewcart"><a href="cart.html"><strong><i class="fa fa-shopping-cart"></i> View Cart</strong></a></span> <span class="btn-checkout"><a href="checkout.html"><strong><i class="fa fa-share"></i> Checkout</strong></a></span> </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search" class="input-group">
+                    <input type="text" name="search" value="" placeholder="Search" class="form-control input-lg" />
+                    <span class="input-group-btn">
+                    <button type="button" class="btn btn-default btn-lg"><i class="fa fa-search"></i></button>
+                    </span> </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav id="menu" class="navbar">
+    <div class="nav-inner container">
+        <div class="navbar-header"><span id="category" class="visible-xs">Categories</span>
+            <button type="button" class="btn btn-navbar navbar-toggle" ><i class="fa fa-bars"></i></button>
+        </div>
+        <div class="navbar-collapse">
+            <ul class="main-navigation">
+                <li><a href="index.html"   class="parent"  >Home</a> </li>
+                <li><a href="category.html"   class="parent"  >Electronics</a> </li>
+                <li><a href="category.html"   class="parent"  >Mobile</a> </li>
+                <li><a href="category.html"   class="parent"  >Fashio & Beauty</a> </li>
+                <li><a href="category.html"   class="parent"  >Audio</a> </li>
+                <li><a href="category.html"   class="parent"  >Home & Family</a> </li>
+                <li><a href="#" class="active parent">Page</a>
+                    <ul>
+                        <li><a href="category.html">Category Page</a></li>
+                        <li><a href="cart.html">Cart Page</a></li>
+                        <li><a href="checkout.html">Checkout Page</a></li>
+                        <li><a href="blog.html" >Blog Page</a></li>
+                        <li><a href="singale-blog.html" >Singale Blog Page</a></li>
+                        <li><a href="register.html">Register Page</a></li>
+                        <li><a href="contact.html">Contact Page</a></li>
+                    </ul>
+                </li>
+                <li><a href="blog.html" class="parent"  >Blog</a></li>
+                <li><a href="about-us.html" >About us</a></li>
+                <li><a href="contact.html" >Contact Us</a> </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+  <ul class="breadcrumb">
+    <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+    <li><a href="#">Account</a></li>
+    <li><a href="#">Gift Voucher</a></li>
+  </ul>
+  <div class="row">
+    <div id="column-left" class="col-sm-3 hidden-xs column-left">
+      <div class="column-block">
+        <div class="column-block">
+          <div class="columnblock-title">Categories</div>
+          <div class="category_block">
+            <ul class="box-category treeview-list treeview">
+              <li><a href="#" class="activSub">Desktops</a>
+                <ul>
+                  <li><a href="#">PC</a></li>
+                  <li><a href="#">MAC</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="activSub">Laptops &amp; Notebooks</a>
+                <ul>
+                  <li><a href="#">Macs</a></li>
+                  <li><a href="#">Windows</a></li>
+                </ul>
+              </li>
+              <li><a href="#" class="activSub">Components</a>
+                <ul>
+                  <li><a href="#">Mice and Trackballs</a></li>
+                  <li><a href="#" class="activSub" >Monitors</a>
+                    <ul>
+                      <li><a href="#"  >test 1</a></li>
+                      <li><a href="#"  >test 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Windows</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Tablets</a></li>
+              <li><a href="#">Software</a></li>
+              <li><a href="#">Phones & PDAs</a></li>
+              <li><a href="#">Cameras</a></li>
+              <li><a href="#">MP3 Players</a></li>
+            </ul>
+          </div>
+        </div>
+        <h3 class="productblock-title">Bestsellers</h3>
+        <div class="row bestseller-grid product-grid">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+            <div class="product-thumb transition">
+              <div class="image product-imageblock"> <a href="#"> <img src="image/product/2product50x59.jpg" alt="iPhone" title="iPhone" class="img-responsive" /> </a>
+                <div class="button-group">
+                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                  <button type="button" class="addtocart-btn" >Add to Cart</button>
+                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+                </div>
+              </div>
+              <div class="caption product-detail">
+                <h4 class="product-name"><a href="product.html" title="iPhone"> iPhone </a> </h4>
+                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
+              </div>
+              <div class="button-group">
+                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="addtocart-btn" >Add to Cart</button>
+                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+            <div class="product-thumb transition">
+              <div class="image product-imageblock"> <a href="#"> <img src="image/product/3product50x59.jpg" alt="iPhone" title="iPhone" class="img-responsive" /> </a>
+                <div class="button-group">
+                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                  <button type="button" class="addtocart-btn" >Add to Cart</button>
+                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+                </div>
+              </div>
+              <div class="caption product-detail">
+                <h4 class="product-name"><a href="product.html" title="iPhone"> iPhone </a> </h4>
+                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
+              </div>
+              <div class="button-group">
+                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="addtocart-btn" >Add to Cart</button>
+                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+            <div class="product-thumb transition">
+              <div class="image product-imageblock"> <a href="#"> <img src="image/product/4product50x59.jpg" alt="iPhone" title="iPhone" class="img-responsive" /> </a>
+                <div class="button-group">
+                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                  <button type="button" class="addtocart-btn" >Add to Cart</button>
+                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+                </div>
+              </div>
+              <div class="caption product-detail">
+                <h4 class="product-name"><a href="product.html" title="iPhone"> iPhone </a> </h4>
+                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
+              </div>
+              <div class="button-group">
+                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="addtocart-btn" >Add to Cart</button>
+                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="productblock-title">Latest</h3>
+        <div class="row latest-grid product-grid">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+            <div class="product-thumb transition">
+              <div class="image product-imageblock"><a href="#"><img src="image/product/1product50x59.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /></a>
+                <div class="button-group">
+                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                  <button type="button" class="addtocart-btn" >Add to Cart</button>
+                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+                </div>
+              </div>
+              <div class="caption product-detail">
+                <h4 class="product-name"><a href="#" title="iPod Classic">iPod Classic</a></h4>
+                <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+              </div>
+              <div class="button-group">
+                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="addtocart-btn" >Add to Cart</button>
+                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+            <div class="product-thumb transition">
+              <div class="image product-imageblock"><a href="#"><img src="image/product/2product50x59.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /></a>
+                <div class="button-group">
+                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                  <button type="button" class="addtocart-btn" >Add to Cart</button>
+                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+                </div>
+              </div>
+              <div class="caption product-detail">
+                <h4 class="product-name"><a href="#" title="iPod Classic">iPod Classic</a></h4>
+                <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+              </div>
+              <div class="button-group">
+                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="addtocart-btn" >Add to Cart</button>
+                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+            <div class="product-thumb transition">
+              <div class="image product-imageblock"><a href="#"><img src="image/product/3product50x59.jpg" alt="iPod Classic" title="iPod Classic" class="img-responsive" /></a>
+                <div class="button-group">
+                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                  <button type="button" class="addtocart-btn" >Add to Cart</button>
+                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+                </div>
+              </div>
+              <div class="caption product-detail">
+                <h4 class="product-name"><a href="#" title="iPod Classic">iPod Classic</a></h4>
+                <p class="price product-price">$122.00<span class="price-tax">Ex Tax: $100.00</span></p>
+                <div class="rating"> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> </div>
+              </div>
+              <div class="button-group">
+                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="addtocart-btn" >Add to Cart</button>
+                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h3 class="productblock-title">Specials</h3>
+        <div class="row special-grid product-grid">
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+            <div class="product-thumb transition">
+              <div class="image product-imageblock"> <a href="#"><img src="image/product/5product50x59.jpg" alt="iPhone" title="iPhone" class="img-responsive" /></a>
+                <div class="button-group">
+                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                  <button type="button" class="addtocart-btn" >Add to Cart</button>
+                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+                </div>
+              </div>
+              <div class="caption product-detail">
+                <h4 class="product-name"> <a href="product.html" title="iPhone">iPhone</a> </h4>
+                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
+              </div>
+              <div class="button-group">
+                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="addtocart-btn" >Add to Cart</button>
+                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+            <div class="product-thumb transition">
+              <div class="image product-imageblock"> <a href="#"><img src="image/product/6product50x59.jpg" alt="iPhone" title="iPhone" class="img-responsive" /></a>
+                <div class="button-group">
+                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                  <button type="button" class="addtocart-btn" >Add to Cart</button>
+                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+                </div>
+              </div>
+              <div class="caption product-detail">
+                <h4 class="product-name"> <a href="product.html" title="iPhone">iPhone</a> </h4>
+                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
+              </div>
+              <div class="button-group">
+                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="addtocart-btn" >Add to Cart</button>
+                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 product-grid-item">
+            <div class="product-thumb transition">
+              <div class="image product-imageblock"> <a href="#"><img src="image/product/7product50x59.jpg" alt="iPhone" title="iPhone" class="img-responsive" /></a>
+                <div class="button-group">
+                  <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                  <button type="button" class="addtocart-btn" >Add to Cart</button>
+                  <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+                </div>
+              </div>
+              <div class="caption product-detail">
+                <h4 class="product-name"> <a href="product.html" title="iPhone">iPhone</a> </h4>
+                <p class="price product-price"> <span class="price-new">$254.00</span> <span class="price-old">$272.00</span> <span class="price-tax">Ex Tax: $210.00</span> </p>
+              </div>
+              <div class="button-group">
+                <button type="button" class="wishlist" data-toggle="tooltip" title="Add to Wish List" ><i class="fa fa-heart-o"></i></button>
+                <button type="button" class="addtocart-btn" >Add to Cart</button>
+                <button type="button" class="compare" data-toggle="tooltip" title="Compare this Product" ><i class="fa fa-exchange"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="content" class="col-sm-6">
+      <h1>Purchase a Gift Certificate</h1>
+      <p>This gift certificate will be emailed to the recipient after your order has been paid for.</p>
+      <form action="http://localhost/opc001/index.php?route=account/voucher" method="post" enctype="multipart/form-data" class="form-horizontal">
+        <div class="form-group required">
+          <label class="col-sm-2 control-label" for="input-to-name">Recipient's Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="to_name" value="" id="input-to-name" class="form-control" />
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-sm-2 control-label" for="input-to-email">Recipient's e-mail</label>
+          <div class="col-sm-10">
+            <input type="text" name="to_email" value="" id="input-to-email" class="form-control" />
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-sm-2 control-label" for="input-from-name">Your Name</label>
+          <div class="col-sm-10">
+            <input type="text" name="from_name" value="" id="input-from-name" class="form-control" />
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-sm-2 control-label" for="input-from-email">Your e-mail</label>
+          <div class="col-sm-10">
+            <input type="text" name="from_email" value="" id="input-from-email" class="form-control" />
+          </div>
+        </div>
+        <div class="form-group required">
+          <label class="col-sm-2 control-label">Gift Certificate Theme</label>
+          <div class="col-sm-10">
+            <div class="radio">
+              <label>
+                <input type="radio" name="voucher_theme_id" value="7" />
+                Birthday</label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="voucher_theme_id" value="6" />
+                Christmas</label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="voucher_theme_id" value="8" />
+                General</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="input-message"><span data-toggle="tooltip" title="Optional">Message</span></label>
+          <div class="col-sm-10">
+            <textarea name="message" cols="40" rows="5" id="input-message" class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-sm-2 control-label" for="input-amount"><span data-toggle="tooltip" title="Value must be between $1.00 and $1,000.00">Amount</span></label>
+          <div class="col-sm-10">
+            <input type="text" name="amount" value="1.00" id="input-amount" class="form-control" size="5" />
+          </div>
+        </div>
+        <div class="buttons clearfix">
+          <div class="pull-right"> I understand that gift certificates are non-refundable.
+            <input type="checkbox" name="agree" value="1" />
+            &nbsp;
+            <input type="submit" value="Continue" class="btn btn-primary" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="container">
+    <div class="footer-top-cms">
+      <div class="footer-logo"> <a href="#"><img alt="index.html" src="image/logo-footer.png"></a> </div>
+      <div class="footer-desc"> <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span> </div>
+      <div class="footer-social">
+        <h5>Social</h5>
+        <ul>
+          <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+          <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li class="youtube"><a href="#"><i class="fa fa-youtube-play"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3 footer-block">
+        <h5 class="footer-title">Information</h5>
+        <ul class="list-unstyled ul-wrapper">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Delivery Information</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 footer-block">
+        <h5 class="footer-title">Customer Service</h5>
+        <ul class="list-unstyled ul-wrapper">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Site Map</a></li>
+          <li><a href="#">Wish List</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 footer-block">
+        <h5 class="footer-title">Extras</h5>
+        <ul class="list-unstyled ul-wrapper">
+          <li><a href="#">Brands</a></li>
+          <li><a href="#">Gift Vouchers</a></li>
+          <li><a href="affiliate.html">Affiliates</a></li>
+          <li><a href="#">Specials</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3 footer-block">
+        <div class="content_footercms_right">
+          <div class="footer-contact">
+            <h5 class="contact-title footer-title">Contact Us</h5>
+            <ul class="ul-wrapper">
+              <li><i class="fa fa-map-marker"></i><span class="location2">About Us, Delivery Information,<br>
+                privacy policy terms<br>
+                condition</span></li>
+              <li><i class="fa fa-envelope"></i><span class="mail2"><a href="#">info@localhost.com</a></span></li>
+              <li><i class="fa fa-mobile"></i><span class="phone2">0987-654-3210</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a id="scrollup">Scroll</a> </footer>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="copyright">Powered By<a class="yourstore" href="http://www.lionode.com/">lionode &copy; 2016 </a> </div>
+  </div>
+  <div class="footer-bottom-cms">
+    <div class="footer-payment">
+      <ul>
+        <li class="mastero"><a href="#"><img alt="" src="image/payment/mastero.jpg"></a></li>
+        <li class="visa"><a href="#"><img alt="" src="image/payment/visa.jpg"></a></li>
+        <li class="currus"><a href="#"><img alt="" src="image/payment/currus.jpg"></a></li>
+        <li class="discover"><a href="#"><img alt="" src="image/payment/discover.jpg"></a></li>
+        <li class="bank"><a href="#"><img alt="" src="image/payment/bank.jpg"></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</body>
+<!-- Mirrored from localhost/opc001/index.php?route=account/voucher by HTTrack Website Copier/3.x [XR&CO'2013], Fri, 30 Oct 2015 18:16:34 GMT -->
+</html>
