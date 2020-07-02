@@ -1,12 +1,13 @@
 ## Laravel 6.12 версия ##
 
 ** Laravel - Доска объявлений **
+* Приложение- доска объявлений Колпино можно посмотреть по адресу <a href="http://kolpino-sale.ru/">kolpino-sale.ru</a>
 
 ### Установка (медленный путь) ###
 
-* введите `git clone https://github.com/bestmomo/laravel5-3-example.git projectname`, чтобы клонировать репозиторий 
+* введите `git clone https://github.com/woskresk/Laravel_Kolpino-sale.ru.git projectname`, чтобы клонировать репозиторий 
 * введите `cd projectname`
-* введите `composer install`
+* введите `composer install`, чтобы установить все зависимости
 * введите `composer update`
 * скопировать * .env.example * в * .env *
 * введите `php artisan key: генерируйте`, чтобы восстановить безопасный ключ

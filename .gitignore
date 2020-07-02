@@ -1,9 +1,10 @@
 # Conection
 .env
-
+.env.backup
 # Dependences (Composer)
 /vendor
 /node_modules
+/node_modules/public/hot
 
 # Ссылка на локальное хранилище
 /public/storage
@@ -11,3 +12,8 @@
 # Vagrant Laravel
 Homestead.json
 Homestead.yaml
+
+/storage/*.key
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
